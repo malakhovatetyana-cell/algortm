@@ -1,0 +1,15 @@
+https://www.hackerrank.com/challenges/kangaroo
+{
+        string ampm = s.Substring(8, 2);
+        int hours = int.Parse(s.Substring(0, 2));
+        string restOfTime = s.Substring(2, 6);
+
+        if (ampm == "AM") {
+            if (hours == 12) hours = 0;
+        } 
+        else {
+            if (hours != 12) hours += 12;
+        }
+
+        return hours.ToString("D2") + restOfTime;
+    }
