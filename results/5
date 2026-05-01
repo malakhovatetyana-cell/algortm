@@ -1,0 +1,13 @@
+https://www.hackerrank.com/challenges/between-two-sets
+ { int count = 0;
+        for (int i = a.Max(); i <= b.Min(); i++)
+        {
+            bool isFactorOfA = a.All(x => i % x == 0);
+            
+            bool isFactorOfB = b.All(x => x % i == 0);
+
+            if (isFactorOfA && isFactorOfB)
+            {
+                count++;
+            }
+        }
