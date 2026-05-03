@@ -1,0 +1,15 @@
+https://www.hackerrank.com/challenges/migratory-birds/problem
+{ int[] counts = new int[6];
+ foreach (int bird in arr)
+ {   counts[bird]++;
+ }
+ int maxFrequency = 0;
+  int resultBird = 0;
+ for (int i = 1; i <= 5; i++)
+    {
+     if (counts[i] > maxFrequency)
+   {
+    maxFrequency = counts[i];
+   resultBird = i;
+            }
+        } return resultBird; }
