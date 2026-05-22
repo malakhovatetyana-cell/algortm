@@ -1,1 +1,12 @@
 // https://www.hackerrank.com/challenges/apple-and-orange/problem
+{  int max = candles.Max();
+        int count = 0;
+        foreach (int candle in candles)
+        {
+     if (candle == max)
+     {
+      count++;
+  }
+  }
+        return count;
+    }
