@@ -1,1 +1,8 @@
 // https://www.hackerrank.com/challenges/staircase/problem
+https://www.hackerrank.com/challenges/staircase/problem
+{
+for (int i = 1; i <= n; i++)
+{
+Console.WriteLine(new string(' ', n - i) + new string('#', i));
+   }
+   }
