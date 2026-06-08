@@ -1,8 +1,9 @@
 // https://www.hackerrank.com/challenges/staircase/problem
 https://www.hackerrank.com/challenges/staircase/problem
-{
-for (int i = 1; i <= n; i++)
-{
-Console.WriteLine(new string(' ', n - i) + new string('#', i));
-   }
+{ int appleCount = apples.Count(apple => (a + apple) >= s && (a + apple) <= t);
+        int orangeCount = oranges.Count(orange => (b + orange) >= s && (b + orange) <= t);
+
+        Console.WriteLine(appleCount);
+        Console.WriteLine(orangeCount);
+
    }
