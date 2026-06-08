@@ -1,15 +1,16 @@
 // https://www.hackerrank.com/challenges/grading/problem
-{ List<int> roundedGrades = new List<int>();
-    foreach (int grade in grades)
-    { if (grade >= 38)
-     {  int nextMultipLeOfFive = ((grade / 5) + 1) * 5;
-        if (nextMultipLeOfFive - grade < 3)
+{ if (v1 <= v2)
         {
-            roundedGrades.Add(nextMultipLeOfFive);
-            continue;
+            return "NO";
         }
-     }
-    roundedGrades.Add(grade);
-     }
-      return roundedGrades;
+        
+        if ((x2 - x1) % (v1 - v2) == 0)
+        {
+            return "YES";
+        }
+        else
+        {
+            return "NO";
+        }
+
     }
