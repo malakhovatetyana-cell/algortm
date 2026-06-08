@@ -1,12 +1,7 @@
 // https://www.hackerrank.com/challenges/apple-and-orange/problem
-{  int max = candles.Max();
-        int count = 0;
-        foreach (int candle in candles)
-        {
-     if (candle == max)
-     {
-      count++;
-  }
-  }
-        return count;
+{   int appleCount = apples.Count(apple => (a + apple) >= s && (a + apple) <= t);
+        int orangeCount = oranges.Count(orange => (b + orange) >= s && (b + orange) <= t);
+
+        Console.WriteLine(appleCount);
+        Console.WriteLine(orangeCount);
     }
